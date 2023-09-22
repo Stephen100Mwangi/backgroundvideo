@@ -1,0 +1,110 @@
+body
+{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main
+{ 
+    min-height: 100px;
+    background: thistle;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0 5%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+.content
+{
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    background: green;
+    height: 50px;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1.5px salmon;
+}
+.content li
+{
+    display: inline-flex;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+.content li a{color: white;text-decoration: none;font-size: 20px;}
+.content li a:hover{color: orangered;}
+h1
+{
+    font-size: 25px;
+    font-family: cursive;
+}
+.back{
+    z-index: -1;
+    position: absolute;
+    top: 50px;
+    background-size: cover;
+    width: 576px;
+    height: 576px;
+    text-align: center;
+}
+@media (min-aspect-ratio: 16/9) {
+    .back
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .back
+    {
+        width: auto;
+        height: 100%;
+    }
+}
+span{
+    color: orange;
+    font-family: fantasy;
+    font-weight: 50;
+
+}
+footer
+{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: cornflowerblue;
+    display: flex;
+    bottom: 0;
+    position: fixed;
+
+}
+footer span{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+footer li{
+    display: inline-flex;
+    padding-inline-start: 20px;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+}
+small
+{color: orangered;
+    font-weight: 15px;
+    margin-right: 5px;
+}
